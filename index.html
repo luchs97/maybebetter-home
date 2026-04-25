@@ -3,14 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>maybebetter.jp — 在日生活決策工具</title>
-    <meta name="description" content="maybebetter.jp 是 Luchs 制作的在日生活決策工具集合。当前提供永住许可审查等待时间预测工具,更多工具陆续开发中。" />
+    <title>maybebetter.jp — 在日生活决策工具</title>
+    <meta name="description" content="maybebetter.jp 是 Luchs 制作的在日生活决策工具集合。当前提供也许更好™的永住预测工具,更多工具陆续开发中。" />
     <link rel="canonical" href="https://maybebetter.jp/" />
 
     <!-- Open Graph -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://maybebetter.jp/" />
-    <meta property="og:title" content="maybebetter.jp — 在日生活決策工具" />
+    <meta property="og:title" content="maybebetter.jp — 在日生活决策工具" />
     <meta property="og:description" content="为在日华人提供基于公开数据的决策工具。" />
     <meta property="og:locale" content="zh_CN" />
     <meta property="og:locale:alternate" content="ja_JP" />
@@ -19,24 +19,24 @@
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:title" content="maybebetter.jp" />
-    <meta name="twitter:description" content="在日生活決策工具集合。" />
+    <meta name="twitter:description" content="在日生活决策工具集合。" />
 
-    <!-- Schema.org WebSite — declares this is a tool collection's home -->
+    <!-- Schema.org WebSite -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "WebSite",
       "name": "maybebetter.jp",
-      "alternateName": "在日生活決策工具",
+      "alternateName": "在日生活决策工具",
       "url": "https://maybebetter.jp/",
-      "description": "Tools for informed decision-making while living in Japan. 在日生活決策工具集合。",
+      "description": "Tools for informed decision-making while living in Japan. 在日生活决策工具集合。",
       "inLanguage": ["zh-CN", "ja-JP", "en-US"]
     }
     </script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Noto+Sans+SC:wght@400;500;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Noto+Sans+SC:wght@400;500;700&family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+SC:wght@700&family=Source+Serif+4:wght@700&display=swap" rel="stylesheet" />
 
     <style>
       * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -74,29 +74,14 @@
         color: #9ca3af;
         margin-top: 0.15rem;
       }
-      .divider {
-        height: 1px;
-        background: #e5e7eb;
-        margin: 0 0 2rem;
-      }
-      .tools-label {
-        font-size: 0.7rem;
-        font-weight: 500;
-        letter-spacing: 0.08em;
-        text-transform: uppercase;
-        color: #9ca3af;
-        margin-bottom: 1rem;
-      }
       .tool {
         display: block;
         text-decoration: none;
         color: inherit;
         padding: 1.25rem 0;
         border-top: 1px solid #e5e7eb;
-        transition: opacity 0.15s;
-      }
-      .tool:last-of-type {
         border-bottom: 1px solid #e5e7eb;
+        transition: opacity 0.15s;
       }
       .tool:hover { opacity: 0.6; }
       .tool-row {
@@ -107,8 +92,16 @@
       }
       .tool-name {
         font-size: 1rem;
-        font-weight: 600;
         color: #111827;
+        letter-spacing: -0.005em;
+      }
+      .tool-name-serif {
+        font-family: 'Source Serif 4', 'Noto Serif SC', serif;
+        font-weight: 700;
+      }
+      .tool-name-sans {
+        font-family: 'Noto Sans SC', 'Inter', sans-serif;
+        font-weight: 500;
       }
       .tool-arrow {
         font-size: 0.875rem;
@@ -127,8 +120,7 @@
         margin-top: 0.2rem;
       }
       .future {
-        padding: 1.25rem 0;
-        border-bottom: 1px solid #e5e7eb;
+        margin-top: 1.25rem;
         font-size: 0.8125rem;
         color: #9ca3af;
         font-style: italic;
@@ -151,31 +143,26 @@
     <main>
       <h1 class="brand">maybebetter.jp</h1>
       <p class="tagline">
-        在日生活決策工具
+        在日生活决策工具
         <span class="tagline-en">Tools for informed decisions while living in Japan</span>
       </p>
 
-      <div class="divider"></div>
-
-      <p class="tools-label">Tools</p>
-
       <a href="https://eiju.maybebetter.jp/" class="tool">
         <div class="tool-row">
-          <span class="tool-name">eijuq</span>
+          <span class="tool-name">
+            <span class="tool-name-serif">也许更好™</span><span class="tool-name-sans">的永住预测工具</span>
+          </span>
           <span class="tool-arrow">→</span>
         </div>
         <p class="tool-desc">永住许可审查等待时间预测</p>
         <p class="tool-desc-ja">永住許可審査 待ち日数予測 / Permanent residency wait time estimator</p>
       </a>
 
-      <div class="future">
-        更多工具开発中 / More tools coming
-      </div>
+      <p class="future">更多工具开发中</p>
 
       <footer>
         制作:Luchs<br>
-        小红书:<a href="https://www.xiaohongshu.com/user/profile/" target="_blank" rel="noopener">ad_astra</a> ·
-        邮箱:<a href="mailto:luchs.cc@gmail.com">luchs.cc@gmail.com</a>
+        小红书:ad_astra · 邮箱:<a href="mailto:luchs.cc@gmail.com">luchs.cc@gmail.com</a>
       </footer>
     </main>
   </body>
